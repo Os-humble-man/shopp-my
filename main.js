@@ -1,21 +1,13 @@
 const mobileMenuButton = document.querySelector('.menu-btn');
 const mobileMenu = document.querySelector('.mobile-menu');
+const btnaction = document.querySelector('.btn-action');
+const svgs = btnaction.getElementsByTagName('svg');
 
 mobileMenuButton.addEventListener('click', () => {
+  for (let i = 0; i < svgs.length; i++) {
+    svgs[i].classList.toggle('hidden');
+  }
+
   mobileMenu.classList.toggle('hidden');
+
 });
-
-// window.addEventListener("DOMContentLoaded",()=>{
-//   const carousel = document.querySelector('.slider-container');
-//   let scroll = 1;
-
-//   function scrollCarousel (){
-//     scroll += 1;
-//     carousel.style.transform = `translateX(-${scroll * 100}%)`;
-
-//   }
-
-//   setInterval(() => {
-//     scrollCarousel();
-//   }, 5000);
-// })
