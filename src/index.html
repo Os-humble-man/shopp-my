@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-7xl px-10 mx-auto">
+      <nav class="flex justify-between items-center py-10">
+        <!-- Logo -->
+        <div>
+          <a href="#" class="font-bold text-gray-500"
+            >shopp<span class="text-red-400">.my</span></a
+          >
+        </div>
+        <!-- Primary nav bar -->
+        <div class="hidden md:flex justify-between items-center space-x-12 ">
+          <ul class="flex items-center space-x-10">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Customer Care</a></li>
+          </ul>
+        </div>
+
+        <!-- Search bar -->
+        <div class="search-box hidden md:flex relative ">
+          <input
+            type="text"
+            placeholder="Search"
+            class="rounded-md px-3 py-1"
+          />
+          <div class="absolute top-1 right-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- secondary navbar -->
+        <div class="hidden  md:flex justify-center space-x-8">
+          <div class="icon2 flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+              />
+            </svg>
+            <p>Account</p>
+          </div>
+          <div class="icon1 flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+            <p>Whishlist</p>
+          </div>
+
+          <div class="icon3 flex flex-col items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+            <p>Card</p>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="menu-btn md:hidden flex items-center">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <ul class="mobile-menu hidden md:hidden">
+        <li class="hover:bg-gray-200 py-2"><a href="#" class="text-slate-800">Home</a></li>
+        <li class="hover:bg-gray-200 py-2"><a href="#">Red rose</a></li>
+        <li class="hover:bg-gray-200 py-2"><a href="#">Lotus</a></li>
+        <li class="hover:bg-gray-200 py-2"><a href="#">Jasmine</a></li>
+        <li class="hover:bg-gray-200 py-2"><a href="#">Contact</a></li>
+      </ul>
+      </nav>
+
+      <!-- Category -->
+
+
+      <div class="hidden max-w-7xl mx-auto  px-10 md:flex justify-evenly">
+
+        <div class=" flex flex-col sm:flex-row md:flex-col lg:flex-row w-[20%] md:w-[10%]">
+          <div class="">
+            <div class="max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md m-4 rounded-full overflow-hidden shadow-lg">
+              <img src="./img/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" alt="">
+            </div>
+            <div class="flex-1 max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md">
+              <div class="px-6 py-4 flex justify-center">
+                <a href="" class="font-bold text-xl mb-2 text-center">Mens</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row w-[10%]">
+          <div class="">
+            <div class="max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md m-4 rounded-full overflow-hidden shadow-lg">
+              <img src="./img/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" alt="">
+            </div>
+            <div class="flex-1 max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md">
+              <div class="px-6 py-4 flex justify-center">
+                <a href="" class="font-bold text-xl mb-2 text-center">Mens</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row w-[10%]">
+          <div class="">
+            <div class="max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md m-4 rounded-full overflow-hidden shadow-lg">
+              <img src="./img/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" alt="">
+            </div>
+            <div class="flex-1 max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md">
+              <div class="px-6 py-4 flex justify-center">
+                <a href="" class="font-bold text-xl mb-2 text-center">Mens</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row w-[10%]">
+          <div class="">
+            <div class="max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md m-4 rounded-full overflow-hidden shadow-lg">
+              <img src="./img/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" alt="">
+            </div>
+            <div class="flex-1 max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md">
+              <div class="px-6 py-4 flex justify-center">
+                <a href="" class="font-bold text-xl mb-2 text-center">Mens</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row w-[10%]">
+          <div class="">
+            <div class="max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md m-4 rounded-full overflow-hidden shadow-lg">
+              <img src="./img/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" alt="">
+            </div>
+            <div class="flex-1 max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md">
+              <div class="px-6 py-4 flex justify-center">
+                <a href="" class="font-bold text-xl mb-2 text-center">Mens</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="flex flex-col sm:flex-row md:flex-col lg:flex-row w-[10%]">
+          <div class="">
+            <div class="max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md m-4 rounded-full overflow-hidden shadow-lg">
+              <img src="./img/senior-man-wearing-white-face-mask-covid-19-campaign-with-design-space.jpeg" alt="">
+            </div>
+            <div class="flex-1 max-w-xs sm:max-w-md md:max-w-xs lg:max-w-md">
+              <div class="px-6 py-4 flex justify-center">
+                <a href="" class="font-bold text-xl mb-2 text-center">Mens</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      
+   
+
+        
+
+
+        
+
+        
+
+
+
+      </div>
+
+      <!-- Banner -->
+
+      <div class="bg-gray-400 grid grid-cols-1 md:grid-cols-2 relative">
+        <!-- left side -->
+        <div class="py-3 md:py-10 text-white font-bold flex flex-col justify-center items-center w-full md:w-[60%] relative">
+          <div class="absolute left-0 bg-white rounded-full hidden md:block">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-6 h-6 p-1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+            </svg>
+          </div>
+          <h2 class="text-4xl py-3">Best Deal</h2>
+          <p class="">Flat 25% Off</p>
+          <p class="pb-3">Grab yours now</p>
+          <div>
+            <button class="font-normal bg-slate-100 px-3 py-1 rounded-[5px] text-gray-700">Shop Now</button>
+          </div>
+        </div>
+      
+        <!-- right side -->
+        <div class="flex justify-center items-center relative">
+          <div class=" p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-black">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+            </svg>
+          </div>
+          <img src="./img/p-t-ohehdpoIKwI-unsplash-removebg-preview.png" alt="" class="object-cover h-80 w-full md:w-auto md:h-auto">
+          <img src="./img/img1.png" alt="" class="object-cover h-80 w-full md:w-auto md:h-auto">
+        </div>
+      </div>
+      
+
+      <!-- Card -->
+
+      <div class="py-10 max-w-7xl px-5 md:px-10 lg:px-20">
+        <h1 class="font-bold text-3xl md:text-4xl py-5">Curated Picks</h1>
+      
+        <div class="flex flex-wrap -mx-2 md:-mx-5">
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-2 md:px-5 mb-5">
+            <div class="relative">
+              <img src="./img/aut/img01.jpg" alt="" class="w-full rounded-md object-cover">
+              <button class="absolute top-2 flex gap-1 right-2 bg-gray-200 text-gray-500 px-3 rounded-sm font-bold py-1">
+                <p>Best Seller</p>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-2 md:px-5 mb-5">
+            <div class="relative">
+              <img src="./img/aut/img01.jpg" alt="" class="w-full rounded-md object-cover">
+              <button class="absolute top-2 flex gap-1 right-2 bg-gray-200 text-gray-500 px-3 rounded-sm font-bold py-1">
+                <p>Best Seller</p>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 px-2 md:px-5 mb-5">
+            <div class="relative">
+              <img src="./img/aut/img01.jpg" alt="" class="w-full rounded-md object-cover">
+              <button class="absolute top-2 flex gap-1 right-2 bg-gray-200 text-gray-500 px-3 rounded-sm font-bold py-1">
+                <p>Best Seller</p>
+                <span>→</span>
+              </button>
+            </div>
+          </div>
+      
+          <!-- Repeat the above code block for other images -->
+        </div>
+      </div>
+      
+
+    </div>
+
+    <div class="bg-slate-200">
+      <div class="max-w-7xl mx-auto px-10 w-screen py-10">
+        <h1 class="font-bold text-center text-3xl">One Day Offer</h1>
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-20">
+            <!-- left side -->
+            <div class="img space-y-9">
+              <div>
+                <img
+                  src="./img/narrow-neck-vase.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-md"
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./img/blue-dining-room-chair-room-with-gray-walls.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-md"
+                />
+              </div>
+
+              <div>
+                <img
+                  src="./img/vase-with-tulips-table.jpg"
+                  alt=""
+                  class="w-20 h-20 rounded-md"
+                />
+              </div>
+            </div>
+            <!-- right side -->
+            <div class="relative">
+              <img src="./img/fauteille-removebg-preview.png" alt="" />
+              <div
+                class="absolute left-28 inset-8 shadow-lg rounded-full blur-md"
+              ></div>
+            </div>
+          </div>
+
+          <div class="">
+            <h1 class="py-5 font-bold text-2xl">Comfortabe Sofa</h1>
+            <h3 class="py-5">
+              $ 1,60,81 <span class="line-through">$122156</span>
+              <span class="text-blue-900">12% Off</span>
+            </h3>
+
+            <p class="w-72 text-gray-400 py-4">
+              When in doubt Choose us. Life changing furniture. Frnishin ideas.
+              The heart of your house
+            </p>
+            <div class="flex space-x-10 py-5">
+              <ul class="list-disc text-xs py-2">
+                <li>Cushion filing</li>
+                <li>Quality checklist</li>
+                <li>Etasbelt webbing</li>
+              </ul>
+
+              <ul class="list-disc text-xs py-2">
+                <li>Upholsery</li>
+                <li>Suspension</li>
+                <li>Feather</li>
+              </ul>
+            </div>
+            <div
+              class="flex space-x-4 shadow-xl bg-slate-100 rounded-sm w-40 py-1 px-2"
+            >
+              <button>Shop Now</button>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-10 py-10">
+      <h1 class="font-bold text-2xl py-5">Most selling products</h1>
+      <!-- Container card -->
+      <div class="flex space-x-5">
+        <div class="border border-slate-300 rounded-md w-[16rem] p-4">
+          <div class="relative">
+            <img
+              src="./img/cardimg/beautiful-shot-black-purse-white-table-with-pink.jpg"
+              alt=""
+              class="w-56 rounded-md"
+            />
+            <div class="absolute top-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <h3 class="font-bold">Hand bag</h3>
+            <h3>$799</h3>
+          </div>
+          <p class="text-xs">Suits your every personal use</p>
+          <p class="text-green-600">★★★★★</p>
+          <button class="text-xs border-2 border-slate-400 p-2 rounded-2xl">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="border border-slate-300 rounded-md w-[16rem] p-4">
+          <div class="relative">
+            <img
+              src="./img/cardimg/arrangement-different-colored-tumblers.jpg"
+              alt=""
+              class="w-56 rounded-md"
+            />
+            <div class="absolute top-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <h3 class="font-bold">Water Bottles</h3>
+            <h3>$ 499</h3>
+          </div>
+          <p class="text-xs">Quench your thirst with these colours</p>
+          <p class="text-green-600">★★★★★</p>
+          <button class="text-xs border-2 border-slate-400 p-2 rounded-2xl">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="border border-slate-300 rounded-md w-[16rem] p-4">
+          <div class="relative">
+            <img
+              src="./img/cardimg/brown-man-s-leather-derby-shoes.jpg"
+              alt=""
+              class="w-56 rounded-md"
+            />
+            <div class="absolute top-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <h3 class="font-bold">Leather Shoes</h3>
+            <h3>$ 1500</h3>
+          </div>
+          <p class="text-xs">Suits your every personal use</p>
+          <p class="text-green-600">★★★★★</p>
+          <button class="text-xs border-2 border-slate-400 p-2 rounded-2xl">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="border border-slate-300 rounded-md w-[16rem] p-4">
+          <div class="relative">
+            <img
+              src="./img/cardimg/fashion-shoes-sneakers.jpg"
+              alt=""
+              class="w-56 rounded-md"
+            />
+            <div class="absolute top-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <h3 class="font-bold">Snakers</h3>
+            <h3>$ 400</h3>
+          </div>
+          <p class="text-xs">Suits your every personal use</p>
+          <p class="text-green-600">★★★★★</p>
+          <button class="text-xs border-2 border-slate-400 p-2 rounded-2xl">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="border border-slate-300 rounded-md w-[16rem] p-4">
+          <div class="relative">
+            <img
+              src="./img/cardimg/white-reusable-water-bottle.jpg"
+              alt=""
+              class="w-56 rounded-md"
+            />
+            <div class="absolute top-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <h3 class="font-bold">Hand bag</h3>
+            <h3>$799</h3>
+          </div>
+          <p class="text-xs">Suits your every personal use</p>
+          <p class="text-green-600">★★★★★</p>
+          <button class="text-xs border-2 border-slate-400 p-2 rounded-2xl">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-10 py-10 flex h-fit">
+      <div>
+        <img src="./img/end.jpg" alt="" class="w-[26rem] rounded-l-xl" />
+      </div>
+      <div class="text-white bg-gray-500 w-full rounded-r-xl py-8 px-5">
+        <p>Don't miss IT</p>
+        <h2 class="font-bold text-2xl py-3">
+          20% off on top brand only this Tuesday <br />
+          and receive special gifts
+        </h2>
+        <div
+          class="flex items-center space-x-3 w-fit bg-white text-gray-600 rounded-sm px-1"
+        >
+          <button class="text-xs font-bold">Grab Now</button>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-300">
+      <div class="max-w-7xl mx-auto px-10 flex justify-around space-x-4 py-6">
+        <div class="">
+          <div>
+            <a href="#" class="font-bold text-gray-500"
+              >shopp<span class="text-red-400">.my</span></a
+            >
+          </div>
+          <div class="text-xs text-gray-500">
+            For high-quality and stylish <br />
+            for your wardrobe
+          </div>
+        </div>
+
+        <div class="flex flex-col text-gray-500">
+          <a href="#" class="font-bold text-black">Shop</a>
+          <a href="#">All Collections</a>
+          <a href="#">Winter Edition</a>
+          <a href="#">Discount</a>
+        </div>
+
+        <div class="flex flex-col text-gray-500">
+          <a href="#" class="font-bold text-black">Company</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Affiliates</a>
+        </div>
+
+        <div class="flex flex-col text-gray-500">
+          <a href="#" class="font-bold text-black">Support</a>
+          <a href="#">FAQS</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Terms of use</a>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-32">
+        <div class="flex justify-center border-t border-gray-400 py-3">
+          <p>Privacy Policy | Terms Of Use @Oscarkng</p>
+        </div>
+      </div>
+    </div>
+    <script src="../main.js"></script>
+  </body>
+</html>
