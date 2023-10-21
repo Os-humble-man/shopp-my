@@ -12,5 +12,5 @@ You can fork the project or clone it on your local machine to modify it to your 
 
 **Images**
 
-[shopp.my image](./img.png)
+![shopp.my image](./img.png)
 
